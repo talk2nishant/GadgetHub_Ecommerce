@@ -14,7 +14,7 @@ const HomePage = () => {
                 <p>description</p>
                 <p> <span>price</span> </p>
                 <button >Add To Card</button>
-                <button>Buy</button>
+                <button>Buy product</button>
              </div>
     
          </div>
