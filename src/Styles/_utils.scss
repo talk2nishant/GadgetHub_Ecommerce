@@ -1,0 +1,16 @@
+@mixin shadow {
+    box-shadow: 0 0 6px -3px #000000;
+}
+
+@mixin container {
+    max-width: var(--max-content-width);
+    margin-inline: auto;
+}
+
+@mixin heading {
+    font-size: 40px;
+    font-weight: 600;
+    span {
+        color: var(--color-primary);
+    }
+}

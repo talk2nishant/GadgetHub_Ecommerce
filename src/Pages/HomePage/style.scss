@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.HomePage{
+    width: 100%;
+    margin: 30px;
+
+    &_container{
+        display: flex;
+        width: 700px;
+        box-shadow: 0 0 04px 5px #dedede;
+        gap: 5px;
+
+     
+    &_img {
+           
+            img{
+                width:200px ;
+                height:200px;
+                margin: 20px;
+            }
+        }
+
+    &_des{
+        // margin: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        button{
+            width: 200px;
+            height: 40px;
+            background-color: #2F58CD;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        p{
+            span{
+                font-weight: bold;
+                font-size: 25px;
+            }
+        }
+    }    
+    }
+ 
+  
+  
+}

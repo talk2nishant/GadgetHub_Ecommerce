@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.CartPage {
+  width: 100%;
+  margin: 30px;
+}
+.CartPage_container {
+  display: flex;
+  width: 700px;
+  box-shadow: 0 0 4px 5px #dedede;
+}
+.CartPage_container_img img {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+}
+.CartPage_container_des {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.CartPage_container_des button {
+  width: 200px;
+  height: 40px;
+  background-color: #2F58CD;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.CartPage_container_des p span {
+  font-weight: bold;
+  font-size: 25px;
+}
+.CartPage .IncDec {
+  display: flex;
+}
+.CartPage .IncDec button {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: lightgrey;
+  color: black;
+  border-radius: 35px;
+  font-size: 35px;
+}
+.CartPage .IncDec h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin: 0 10px;
+}/*# sourceMappingURL=style.css.map */
