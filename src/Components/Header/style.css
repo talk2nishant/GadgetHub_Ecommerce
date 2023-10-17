@@ -1,38 +1,52 @@
 .navigationBar {
-  background-color: #2F58CD;
+  background-color: rgb(47, 88, 205);
   display: flex;
   justify-content: center;
   padding: 10px;
 }
-.navigationBar_heading {
+.navigationBar_main {
   color: lightgrey;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 20px;
   padding: 0px 60px 0px 80px;
   cursor: pointer;
 }
-.navigationBar_heading a {
+.navigationBar_main_heading {
+  font-size: 25px;
+  margin-right: 50px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.navigationBar_main a {
   text-decoration: none;
   color: lightgrey;
 }
-.navigationBar form {
+.navigationBar_main a:hover {
+  color: lightgrey;
+}
+.navigationBar_main form {
   border: 1px;
   display: flex;
+  justify-content: center;
+  height: 45px;
 }
-.navigationBar form input {
+.navigationBar_main form input {
   width: 400px;
   border: 0;
   padding: 0 30px 0 30px;
   outline: none;
 }
-.navigationBar form button {
+.navigationBar_main form button {
   width: 40px;
   border: none;
   background-color: white;
   cursor: pointer;
+  border-radius: 5px;
+  color: rgb(47, 88, 205);
 }
-.navigationBar_ul {
+.navigationBar_main_ul {
   display: flex;
   gap: 60px;
   color: lightgrey;
@@ -41,18 +55,50 @@
   margin-left: 50px;
   cursor: pointer;
   text-align: center;
+  margin-bottom: 0px;
 }
-.navigationBar_ul button {
-  height: 40px;
-  width: 100px;
-  font-size: 18px;
-  cursor: pointer;
-}
-.navigationBar_li {
+.navigationBar_main_ul_li {
   list-style-type: none;
   font-size: 20px;
 }
-.navigationBar_li a {
-  color: lightgrey;
-  text-decoration: none;
+.navigationBar_main_ul_li_dropdown {
+  position: relative;
+  list-style-type: none;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  margin: 0 0 0 0;
+  z-index: 1;
+}
+.navigationBar_main_ul_li_dropdown span {
+  text-align: center;
+  color: rgb(47, 88, 205);
+  position: absolute;
+  top: 2px;
+  right: 25px;
+}
+.navigationBar_main_ul_li_dropdown:hover .navigationBar_main_ul_li_dropdown_ul {
+  display: flex;
+}
+.navigationBar_main_ul_li_dropdown_ul {
+  position: absolute;
+  width: 200px;
+  background-color: rgb(47, 88, 205);
+  color: black;
+  list-style-type: none;
+  text-align: start;
+  top: 42px;
+  flex-direction: column;
+  gap: 10px;
+  display: none;
+  padding: 20px;
+}
+.navigationBar_main .button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(47, 88, 205);
 }/*# sourceMappingURL=style.css.map */

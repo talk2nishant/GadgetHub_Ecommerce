@@ -1,0 +1,17 @@
+.mainContainer {
+  margin: 20px 0;
+}
+.mainContainer_mainCarousel_inner_item img {
+  height: 500px;
+}
+.mainContainer_mainCarousel_inner_item_heading h5 {
+  color: darkgrey;
+}
+.mainContainer_mainCarousel_inner_item_heading p {
+  color: darkgrey;
+}
+.mainContainer_mainCarousel button span {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 50px;
+}/*# sourceMappingURL=style.css.map */

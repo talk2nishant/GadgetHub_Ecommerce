@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.singleproduct{
+    &_main{
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+        gap: 50px;
+        &_left{
+            width: 500px;
+            height: 500px;
+            &_mainCarousel{
+                &_inner{
+                    &_item{
+                        height: 500px;
+                        width: 500px;                     
+                        img{
+                            width: 500px;
+                            height: 500px;
+                            background-color: green;
+                        }
+                    }
+                }
+                button{
+                        height: 50px;
+                        width: 20px;
+                            margin: 224px 25px;
+                        
+                    span{
+                        font-size: 60px;
+                        color: blue;
+                    }
+                }
+            }
+        }
+        &_right{
+            width: 500px;
+            height: 500px;
+            padding: 10px;
+            &_heading{
+                h4{
+                    color: black;
+                    display: inline-block;
+                    margin-bottom: 0px;
+                    font-size: 17px;
+                }
+                p{
+                    font-size: 17px;
+                }
+                span{
+                    font-size: 14px;
+                }
+            }
+            &_price{
+                margin-top:20px ;
+                h5{
+                    margin-bottom: 0px;
+                    color: #da0000;
+                    font-weight: 900;
+                }
+                p{
+                    span {
+                        text-decoration: line-through;
+                        margin-right: 10px;
+                    }
+                }
+               
+            }
+            &_off{
+                display: flex;
+                gap: 5px;
+                font-size: 18px;
+                margin-bottom:16px ;
+                span{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    color: #279EFF;
+                   
+                }
+                p {
+                    margin-bottom: 0px;
+                    
+                }
+            }
+            &_counter{
+                display:flex;
+                gap: 50px;
+                align-items: center;
+                span{
+                    display: flex;
+                    gap: 16px;
+                    button{
+                        width: 30px;
+                        height: 30px;
+                        background-color: white;
+                        border: 1px solid blue;
+                        color: blue;
+                        border-radius: 50%;
+                    }
+                }
+                button{
+                    width: 190px;
+                    height: 60px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: rgb(47, 88, 205);
+                    color: white;
+                }
+            }
+        }
+    
+    }
+}

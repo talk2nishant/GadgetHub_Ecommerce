@@ -5,51 +5,76 @@
 }
 
 .HomePage{
-    width: 100%;
-    margin: 30px;
+    
 
-    &_container{
-        display: flex;
-        width: 700px;
-        box-shadow: 0 0 04px 5px #dedede;
-        gap: 5px;
+    &_card{
+       display: flex;
+       gap: 30px;
+       margin:20px 50px ;
 
-     
-    &_img {
-           
-            img{
-                width:200px ;
-                height:200px;
-                margin: 20px;
+        &_main{            
+            box-shadow: 0 0 04px 1px #2F58CD;
+            padding: 5px;
+
+            &_img {
+                img {
+                    width: 300px;
+                    height: 300px;
+                    
+                }
+            }
+            
+            &_description {
+                // margin: 20px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                
+                h2{
+                    cursor: pointer;
+                }
+                
+                p {                
+                    font-weight: bold;
+                    font-size: 25px;
+
+                    span{
+                        color: #2F58CD;
+                    }
+                }
+            }
+
+            &_cart{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 20px;
+                
+                button {
+                    width: 200px;
+                    height: 40px;
+                    background-color: #2F58CD;
+                    border: none;
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+
+                span{
+                    font-size: 25px;
+                    /* border: 1px solid #2F58CD; */
+                    /* width: 30px; */
+                    /* text-align: center; */
+                    color: #2F58CD;
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                }
             }
         }
-
-    &_des{
-        // margin: 20px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        button{
-            width: 200px;
-            height: 40px;
-            background-color: #2F58CD;
-            border: none;
-            color: white;
-            border-radius: 5px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        p{
-            span{
-                font-weight: bold;
-                font-size: 25px;
-            }
-        }
-    }    
     }
- 
-  
-  
+
+   
+
 }

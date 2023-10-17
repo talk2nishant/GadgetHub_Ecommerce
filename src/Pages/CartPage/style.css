@@ -4,56 +4,159 @@
   box-sizing: border-box;
 }
 
-.CartPage {
-  width: 100%;
-  margin: 30px;
+.cartMain {
+  margin: 50px;
 }
-.CartPage_container {
+.cartMain_container {
   display: flex;
-  width: 700px;
-  box-shadow: 0 0 4px 5px #dedede;
+  align-items: center;
+  justify-content: center;
 }
-.CartPage_container_img img {
-  width: 300px;
-  height: 300px;
-  margin: 20px;
-  padding: 20px;
+.cartMain_container_left {
+  border: 1px solid lightgrey;
+  width: 850px;
+  border-radius: 5px;
 }
-.CartPage_container_des {
-  margin: 20px;
-  padding: 20px;
+.cartMain_container_left_main_address {
+  padding-bottom: 20px;
+}
+.cartMain_container_left_main_address_heading {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: lightgrey;
+}
+.cartMain_container_left_main_address_heading span {
+  display: flex;
+  align-items: center;
+}
+.cartMain_container_left_main_address_heading span p {
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+.cartMain_container_left_main_address_heading button {
+  padding: 10px;
+  color: blue;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.cartMain_container_left_main_productDetail {
+  padding: 30px;
+}
+.cartMain_container_left_main_productDetail_up {
+  display: flex;
+  gap: 30px;
+}
+.cartMain_container_left_main_productDetail_up_img img {
+  width: 100px;
+  height: 100px;
+}
+.cartMain_container_left_main_productDetail_up_nameDetail .detail {
+  color: lightgrey;
+}
+.cartMain_container_left_main_productDetail_up_nameDetail span {
+  display: flex;
+  gap: 5px;
+}
+.cartMain_container_left_main_productDetail_up_nameDetail span .first {
+  color: #878787;
+  text-decoration: line-through;
+}
+.cartMain_container_left_main_productDetail_up_nameDetail span .third {
+  color: green;
+}
+.cartMain_container_left_main_productDetail_down {
+  display: flex;
+  gap: 50px;
+  padding-top: 20px;
+  align-items: center;
+}
+.cartMain_container_left_main_productDetail_down_IncDec {
+  display: flex;
   gap: 20px;
+  align-items: center;
 }
-.CartPage_container_des button {
+.cartMain_container_left_main_productDetail_down_IncDec button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  border-color: lightgrey;
+}
+.cartMain_container_left_main_productDetail_down_IncDec button span {
+  font-size: 20px;
+}
+.cartMain_container_left_main_productDetail_down_IncDec div {
+  border: 1px solid lightgrey;
+  padding: 10px;
+  width: 66px;
+  height: 45px;
+  text-align: center;
+}
+.cartMain_container_left_main_productDetail_down_SaveRemove {
+  display: flex;
+  gap: 30px;
+}
+.cartMain_container_left_main_productDetail_down_SaveRemove button {
+  border: none;
+  background-color: white;
+  font-weight: 800;
+}
+.cartMain_container_left_main_placeOrder {
+  height: 65px;
+  background-color: lightgrey;
+}
+.cartMain_container_left_main_placeOrder button {
+  position: relative;
+  right: 0px;
+  left: 600px;
+  top: 13px;
   width: 200px;
   height: 40px;
-  background-color: #2F58CD;
   border: none;
-  color: white;
+  color: blue;
+}
+.cartMain_container_right {
+  margin-left: 20px;
+  position: relative;
+  bottom: 66px;
+}
+.cartMain_container_right_main {
+  border: 1px solid lightgrey;
+  box-shadow: 0px 0px 4px 1px lightgrey;
+  padding: 20px;
+  width: 400px;
   border-radius: 5px;
-  font-size: 20px;
-  cursor: pointer;
 }
-.CartPage_container_des p span {
-  font-weight: bold;
-  font-size: 25px;
+.cartMain_container_right_main_heading h5 {
+  color: darkgrey;
+  border-bottom: 1px solid lightgrey;
 }
-.CartPage .IncDec {
+.cartMain_container_right_main_priceDetail span {
   display: flex;
+  justify-content: space-between;
 }
-.CartPage .IncDec button {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  background-color: lightgrey;
-  color: black;
-  border-radius: 35px;
-  font-size: 35px;
+.cartMain_container_right_main_priceDetail span p {
+  display: flex;
+  align-items: center;
 }
-.CartPage .IncDec h2 {
-  font-size: 45px;
-  font-weight: 400;
-  margin: 0 10px;
+.cartMain_container_right_main_priceDetail span .discount-free {
+  color: green;
+}
+.cartMain_container_right_main_priceDetail_total span {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  font-weight: 700;
+  padding: 10px;
+  align-items: center;
+}
+.cartMain_container_right_main_priceDetail_total span p {
+  display: flex;
+  align-items: center;
+}
+.cartMain_container_right_main_priceDetail_total .totalsave {
+  color: green;
 }/*# sourceMappingURL=style.css.map */

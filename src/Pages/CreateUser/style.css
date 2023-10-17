@@ -5,39 +5,59 @@
 }
 
 .RegisterUser {
-  min-height: calc(100vh - 69px);
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #DAF5FF;
 }
 .RegisterUser_container {
-  width: 700px;
-  height: 500px;
-  margin: 50px auto;
-  box-shadow: 0 0 4px 5px #dedede;
-  padding: 30px 120px;
-  align-items: stretch;
-  background-color: white;
+  display: flex;
+  justify-content: center;
 }
-.RegisterUser_container_heading {
+.RegisterUser_container_main {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #2F58CD;
+}
+.RegisterUser_container_main_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  background-color: #2F58CD;
+  text-align: center;
+  border-radius: 5px;
+}
+.RegisterUser_container_main_left h1 {
+  margin-bottom: 50px;
+  color: lightgrey;
+}
+.RegisterUser_container_main_left p {
+  color: lightgrey;
+}
+.RegisterUser_container_main_right {
+  padding: 25px 120px;
+  width: 500px;
+}
+.RegisterUser_container_main_right_heading {
   color: #2F58CD;
   margin-top: 50px;
 }
-.RegisterUser_container form {
+.RegisterUser_container_main_right form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 300px;
-  margin: 30px 0px;
+  margin: 30px 0px 0px;
 }
-.RegisterUser_container form input {
+.RegisterUser_container_main_right form input {
   display: flex;
   padding: 10px;
-  border: 1px lightgrey;
-  border-bottom: 1px darkgrey;
+  border: none;
+  border-bottom: 1px solid grey;
 }
-.RegisterUser_container form button {
+.RegisterUser_container_main_right form button {
   width: 200px;
   height: 40px;
   background-color: #2F58CD;
@@ -48,10 +68,13 @@
   cursor: pointer;
   margin-top: 20px;
 }
-.RegisterUser_container a {
+.RegisterUser_container_main_right form a {
   margin: 20px 0;
   text-decoration: none;
 }
-.RegisterUser_container a span {
+.RegisterUser_container_main_right a {
+  text-decoration: none;
+}
+.RegisterUser_container_main_right a span {
   color: black;
 }/*# sourceMappingURL=style.css.map */

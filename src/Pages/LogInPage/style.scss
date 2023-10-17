@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,64 +6,89 @@
 }
 
 .LoginPage{
-    min-height: calc(70vh - 69px);
+    // min-height: calc(70vh - 69px);
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #DAF5FF;
     &_container {
-        width: 700px;
-        height: 500px;
-        margin: 50px auto;
-        box-shadow: 0 0 04px 5px #dedede;
-        padding: 30px 120px;
-        align-items: stretch;
-        background-color: white;
-
-        &_heading {
-            color: #2F58CD;
-            margin-top: 50px;
-        }
-
-        form {
+        display: flex;
+        justify-content: center;
+        &_main{
             display: flex;
-            flex-direction: column;
-            gap: 10px;
-            width: 300px;
-            margin: 30px 0px;
-
-            input {
+            justify-content: center;
+            border-radius: 5px;
+            border: 1px solid #2F58CD;
+            
+            &_left{
                 display: flex;
-                padding: 10px;
-                border: 1px lightgrey;
-                border-bottom:1px darkgrey ;
-                
-            }
-
-            button {
-                width: 200px;
-                height: 40px;
+                flex-direction: column;
+                justify-content: center;
+                width: 500px;
                 background-color: #2F58CD;
-                border: none;
-                color: white;
+                text-align: center;
                 border-radius: 5px;
-                font-size: 20px;
-                cursor: pointer;
-                margin-top: 20px;
+        
+                h1{
+                    margin-bottom: 50px;
+                    color: lightgrey;
+                }
+                p{
+                    color: lightgrey;
+                }
+               
             }
-
-            a{
-                margin: 20px 0;
-                text-decoration: none;
+            &_right{
+                padding: 25px 120px;
+                width: 500px;
+                
+                &_heading {
+                        color: #2F58CD;
+                        margin-top: 50px;
+                    }
+                
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        width: 300px;
+                        margin: 30px 0px 0px;
+                
+                        input {
+                            display: flex;
+                            padding: 10px;
+                            border: none;
+                            border-bottom: 1px solid grey;
+                
+                        }
+                
+                        button {
+                            width: 200px;
+                            height: 40px;
+                            background-color: #2F58CD;
+                            border: none;
+                            color: white;
+                            border-radius: 5px;
+                            font-size: 20px;
+                            cursor: pointer;
+                            margin-top: 20px;
+                        }
+                
+                        a {
+                            margin: 20px 0;
+                            text-decoration: none;
+                        }
+                    }
+                
+                    a {
+                        text-decoration: none;
+                
+                        span {
+                            color: black;
+                        }
+                
+                    }
             }
         }
-           a{
-            text-decoration: none;
-
-            span{
-                color: black;
-            }
-        
-            }
     }
 }

@@ -4,73 +4,208 @@
     box-sizing: border-box;
 }
 
-.CartPage {
-    width: 100%;
-    margin: 30px;
+.cartMain {
+    margin: 50px;
 
     &_container {
         display: flex;
-        width: 700px;
-        box-shadow: 0 0 04px 5px #dedede;
+        align-items: center;
+        justify-content: center;
 
+        &_left {
+            border: 1px solid lightgrey;
+            width: 850px;
+            border-radius: 5px;
 
-        &_img {
+            &_main {
 
-            img {
-                width: 300px;
-                height: 300px;
-                margin: 20px;
-                padding: 20px;
+                &_address {
+                    padding-bottom: 20px;
+
+                    &_heading {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 15px;
+                        background-color: lightgrey;
+
+                        span {
+                            display: flex;
+                            align-items: center;
+
+                            p {
+                                margin-bottom: 0;
+                                padding-left: 10px;
+
+                            }
+                        }
+
+                        button {
+                            padding: 10px;
+                            color: blue;
+                            border: 1px solid lightgrey;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+
+                &_productDetail {
+                    padding: 30px;
+
+                    &_up {
+                        display: flex;
+                        gap: 30px;
+
+                        &_img {
+                            img {
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+
+                        &_nameDetail {
+                            h5 {}
+
+                            .detail {
+                                color: lightgrey;
+                            }
+
+                            span {
+                                display: flex;
+                                gap: 5px;
+
+                                .first {
+                                    color: #878787;
+                                    text-decoration: line-through;
+
+                                }
+
+                                .third {
+                                    color: green;
+                                }
+                            }
+                        }
+                    }
+
+                    &_down {
+                        display: flex;
+                        gap: 50px;
+                        padding-top: 20px;
+                        align-items: center;
+
+                        &_IncDec {
+                            display: flex;
+                            gap: 20px;
+                            align-items: center;
+
+                            button {
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                background-color: white;
+                                text-align: center;
+                                border-color: lightgrey;
+
+                                span {
+                                    font-size: 20px;
+                                }
+                            }
+
+                            div {
+                                border: 1px solid lightgrey;
+                                padding: 10px;
+                                width: 66px;
+                                height: 45px;
+                                text-align: center;
+                            }
+                        }
+
+                        &_SaveRemove {
+                            display: flex;
+                            gap: 30px;
+
+                            button {
+                                border: none;
+                                background-color: white;
+                                font-weight: 800;
+                            }
+                        }
+                    }
+                }
+
+                &_placeOrder {
+                    height: 65px;
+                    background-color: lightgrey;
+
+                    button {
+                        position: relative;
+                        right: 0px;
+                        left: 600px;
+                        top: 13px;
+                        width: 200px;
+                        height: 40px;
+                        border: none;
+                        color: blue;
+                    }
+                }
             }
         }
 
-        &_des {
-            margin: 20px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+        &_right {
+            margin-left: 20px;
+            position: relative;
+            bottom: 66px;
 
-            button {
-                width: 200px;
-                height: 40px;
-                background-color: #2F58CD;
-                border: none;
-                color: white;
+            &_main {
+                border: 1px solid lightgrey;
+                box-shadow: 0px 0px 4px 1px lightgrey;
+                padding: 20px;
+                width: 400px;
                 border-radius: 5px;
-                font-size: 20px;
-                cursor: pointer;
-            }
 
-            p {
-                span {
-                    font-weight: bold;
-                    font-size: 25px;
+                &_heading {
+                    h5 {
+                        color: darkgrey;
+                        border-bottom: 1px solid lightgrey;
+                    }
+                }
+
+                &_priceDetail {
+                    span {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .discount-free {
+                            color: green;
+                        }
+                    }
+
+                    &_total {
+                        span {
+                            display: flex;
+                            justify-content: space-between;
+                            border-top: 1px solid lightgrey;
+                            border-bottom: 1px solid lightgrey;
+                            font-weight: 700;
+                            padding: 10px;
+                            align-items: center;
+
+                            p {
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+
+                        .totalsave {
+                            color: green;
+                        }
+                    }
                 }
             }
         }
     }
-
-    .IncDec{
-        display: flex;
-        button{
-            width: 50px;
-            height: 50px;
-            margin: 5px;
-            background-color: lightgrey;
-            color: black;
-            border-radius: 35px;
-            font-size: 35px;
-        }
-
-        h2{
-            font-size:45px;
-            font-weight: 400;
-            margin: 0 10px;
-        }
-
-    }
-
-
-
 }
